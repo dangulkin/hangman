@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import GameHeader from "./components/GameHeader.vue";
-import GameFigure from "./components/GameFigure.vue";
-import GameWrongLetters from "./components/GameWrongLetters.vue";
-import GameWord from "./components/GameWord.vue";
 import GamePopup from "./components/GamePopup.vue";
-import GameNotification from "./components/GameNotification.vue";
 import { GameStatus } from "./types/GameStatus.ts";
 import { ref, watch } from "vue";
 import { useRandomWord } from "./composables/useRandomWord.ts";
