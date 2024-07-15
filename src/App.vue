@@ -55,7 +55,7 @@ window.addEventListener('keydown', ({ key }) => {
 defineExpose({
   restart
 });
-</script>
+</script
 <template>
   <GameHeader />
   <div class="game-container">
