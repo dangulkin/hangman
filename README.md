@@ -2,6 +2,9 @@
 
 This is a simple Hangman game built using Vue 3, TypeScript, and Vite.
 
+Preview 
+https://hangman-five-xi.vercel.app/
+
 ## Features
 
 - Interactive Hangman game
@@ -47,32 +50,9 @@ This is a simple Hangman game built using Vue 3, TypeScript, and Vite.
 3. **Preview the production build**:
 
    ```sh
-   npm run preview
-   ```
+   npm run previe
+   ``````
 
-## Example Code
+## License
 
-### Fetching a Random Name
-
-```typescript
-import axios from "axios";
-
-export const getRandomName = async () => {
-  const { data } = await axios.get("https://randomuser.me/api/?inc=name&nat=us");
-  return data.results[0].name.first;
-};
-```
-
-### Using the Random Name in the Game
-
-```typescript
-const getRandomWord = async () => {
-  try {
-    const name = await getRandomName();
-    theName.value = name.toLowerCase();
-  } catch (error) {
-    console.error('Error fetching random name:', error);
-    theName.value = '';
-  }
-};
-```
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
